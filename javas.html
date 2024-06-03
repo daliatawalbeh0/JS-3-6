@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <script>
+      // 1- Write a program that prints numbers from 1 to 10 using a for loop.
+      for (let i = 1; i <= 10; i++) {
+        console.log(i);
+      }
+      // 2-Write a program that prints the even numbers from 1 to 10 using a for loop.
+      for (var i = 1; i <= 10; i++) {
+        if (i % 2 == 0) {
+          console.log(i);
+        }
+      }
+      // 3- Write a program that prints the odd numbers from 1 to 10 using a while loop.
+      for (var i = 1; i <= 10; i++) {
+        if (i % 2 == 1) {
+          console.log(i);
+        }
+      }
+      // 4- Write a program that prints the multiplication table of a number entered by the user using a for loop.
+      const mulnum = prompt("Enter a number to multiply it");
+      var mul = "";
+      for (var i = 1; i <= 12; i++) {
+        mul += "\n" + i * mulnum;
+      }
+      console.log(mul);
+
+      // 5- Write a program that calculates the sum of numbers from 1 to 100 using a while loop.
+      var sum = 0;
+      var d = 1;
+      while (d <= 100) {
+        var n = (sum += d);
+        d++;
+      }
+      console.log(n);
+
+      // 6- Write a program that calculates the factorial of a number entered by the user using a for loop.
+      var x = prompt("enter a number");
+      var i = 0;
+      function factorial(i) {
+        for (; i <= x; i++) {
+          if (i == 0) {
+            return 1;
+          } else return i * factorial(i - 1);
+        }
+      }
+      console.log(factorial(x));
+      // 7- Write a program that prints the Fibonacci series up to a certain number entered by the user using a while loop.
+      var fib = 0;
+      var fib2 = 1;
+      var Next;
+      var fibuser = prompt("Please enter the number of terms");
+      var l = 1;
+
+      while (l <= fibuser) {
+        console.log(fib);
+        Next = fib + fib2;
+        fib = fib2;
+        fib2 = Next;
+
+        l++;
+      }
+
+      // 8- Write a program that prints the reverse of the following numbers:
+      //5 , 10 , 15 , 20
+      // using a while loop.
+      var aa = 20;
+      while (aa >= 5) {
+        console.log(aa);
+        aa = aa - 5;
+      }
+    </script>
+  </body>
+</html>
